@@ -1,0 +1,84 @@
+		
+#game{
+	background: #FFF;
+	margin-top:0%;
+	margin-left:200px;
+	border:8px solid #333;
+
+}
+#fillcolor{
+	background-color:white;
+	position:absolute;
+	top:425px;
+	margin-left:25px;
+	border: 5px solid #6f6f6f;
+}
+#outlinecolor{
+	background-color:white;
+	position:absolute;
+	top:550px;
+	margin-left:25px;
+	border: 5px solid #6f6f6f;
+}
+			
+html,body {
+	border:1px solid #333;
+	background: black;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+menu {
+	position:absolute;
+    list-style-type:none;
+    font-weight: bold;
+    color:white;
+}
+menu:before, command:before {
+    display:block;
+    content:attr(label);
+}
+menu[type=toolbar] {
+    position:absolute;
+}
+menu[type=toolbar]>menu, menu[type=toolbar]>comman {
+    /*display:inline-block;*/
+    cursor:pointer; /*Cursor becomes a poiter finger when hovering*/
+    width:80px;
+    /*height:25px;*/
+   	position:relative;
+   	left:0px;
+    border: 5px solid #6f6f6f;
+    background-color: #4C4C4C;
+}
+menu[type=toolbar]>menu>menu, menu[type=toolbar]>menu>command {
+    visibility:hidden;
+    display:block;
+    height:0px;
+}
+menu[type=toolbar]>menu:hover>menu, menu[type=toolbar]>menu:hover>command {
+ 	
+    visibility:visible;
+    position:relative;
+    height:auto;
+    width:120px;
+    color:black;
+    background:#DBDBDB;
+    border: 3px solid black;
+}
+
+#new:hover,#save:hover,#saveas:hover,#shape:hover,#fillColor:hover,#outlineColor:hover,#outlineWidth:hover,
+#Rectangle:hover,#Circle:hover,#Line:hover,#Fill:hover,#Outline:hover,#outlineWidth:hover,#help:hover,#about:hover,#editFill:hover,#editOutline:hover,#editOutlineWidth:hover{
+	background-color: black;
+	cursor:pointer; /*Cursor becomes a poiter finger when hovering*/
+	color:white;
+	border: 3px solid white;
+}
+h1{
+	top-margin:0px;
+	background-color:white;
+	margin-left:70%;
+}
+#menuDiv{
+	position:absolute;
+	width:100px;
+	height:700px;
+}

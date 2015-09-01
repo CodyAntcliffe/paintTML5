@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!-- Holds all unsean info-->
+		<title>Assignment 3- Paint</title>
+		<meta charset='utf-8'>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	
+	<body>
+		<menu id="tools" type="toolbar">
+		    <menu id= "FILE" label="FILE" >
+		        <command id='new' label="New" />
+		        <command id='save' label="Save" />
+		        <command id='saveas' label="Save As" />
+		    </menu>
+		    <menu label="SHAPE">
+				<command id='Rectangle' label="Rectangle" />
+			    <command id='Circle' label="Circle" />
+			    <command id='Line' label="Line" />
+		    </menu>
+		    <menu label="COLORS">
+				<command id='Fill' label="Fill"/>
+			    <command id='Outline' label="Outline"/>
+		    </menu>
+		    <menu label="WIDTH">
+				<command id='outlineWidth' label="Outline Width" />
+		    </menu>
+		    <menu label="EDIT">
+		        <command id="editFill" label="Fill" />
+		        <command id="editOutline" label="Outline" />
+		        <command id="editOutlineWidth" label="Outline Width" />
+		    </menu>
+
+		    <menu label="HELP">
+		        <command id="help" label="Help" />
+		        <command id="about" label="About" />
+		    </menu>
+		</menu>
+
+		<menu id="shapeBar" type="toolbar">
+			
+		</menu>
+		<canvas id='game' width='1300' height='700' ></canvas>
+		<canvas id='fillcolor' width='150' height='100' ></canvas>
+		<canvas id='outlinecolor' width='150' height='100' ></canvas>
+		<script src="main.js"></script>
+
+		<div id="nameDiv">
+			<h1>By: Cody Antcliffe(0473673)</h1>
+		</div>
+
+	</body>
+</html>
